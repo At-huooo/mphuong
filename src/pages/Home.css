@@ -69,6 +69,19 @@
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 }
 
+.click-indicator-timeline {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  transform: rotate(-10deg);
+  width: 200px;
+  text-align: center;
+  z-index: 30;
+  color: #ad0000;
+  font-family: var(--font-accent);
+  font-size: 1.5rem;
+  pointer-events: none;
+}
 /* =========================================
    ELEMENTS TRANG TRÍ ABSOLUTE
 ========================================= */

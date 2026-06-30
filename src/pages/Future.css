@@ -35,6 +35,22 @@
     cursor: default;
 }
 
+.click-indicator-future {
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--font-accent);
+    font-size: 2rem;
+    font-weight: bold;
+    color: #feffbd;
+    pointer-events: none;
+    z-index: 30;
+    filter: drop-shadow(2px 3px 4px rgba(0, 0, 0, 0.4));
+
+    animation: pointBounce 1.2s ease-in-out infinite;
+}
+
 /* Các thành phần trang trí */
 .decor {
     position: absolute;

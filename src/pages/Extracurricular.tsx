@@ -3,6 +3,7 @@ import { motion, AnimatePresence, type Variants } from 'framer-motion'; // 1. Th
 import './Extracurricular.css';
 import Navbar from '../assets/Navbar1';
 import Footer from '../assets/Footer';
+import { ClickMeIndicator } from '../assets/Clickme';
 
 type ProjectView = 'main' | 'buom' | 'maybiec' | 'pise';
 
@@ -32,7 +33,6 @@ export const AutoFadingCard: React.FC<AutoFadingCardProps> = ({
                 <div
                     key={index}
                     className={`fade-item ${index === currentIndex ? 'active' : ''}`}
-                    // Khi có ảnh thật, xóa item text ở dưới và bỏ comment dòng style này:
                     style={{ backgroundImage: `url(${item})` }}
                 >
                 </div>
@@ -116,7 +116,7 @@ const MainBoard: React.FC<{ onSelectProject: (view: ProjectView) => void }> = ({
             <svg className="red-string-svg" viewBox="0 0 1000 400" preserveAspectRatio="none">
                 <path d="M 150 250 Q 300 310, 600 250 T 850 150" fill="none" stroke="#b91c1c" strokeWidth="10" />
             </svg>
-
+            <ClickMeIndicator text="Click on the polaroids to explore!" className="pointer-pola-1" />
             <div className="polaroid polaroid-1" onClick={() => onSelectProject('buom')}></div>
             <div className="polaroid polaroid-2" onClick={() => onSelectProject('maybiec')}></div>
             <div className="polaroid polaroid-3" onClick={() => onSelectProject('pise')}></div>
@@ -162,6 +162,7 @@ const ProjectBuom: React.FC<{ onBack: () => void }> = ({ onBack }) => {
         <div className="corkboard horizontal-board" ref={scrollRef}>
             <div className="horizontal-content buom-layout">
                 <button className="back-btn" onClick={onBack}>Back to Board</button>
+                <ClickMeIndicator text="Scroll right!!" className="pointer-pola-2" />
 
                 {/* 1. Mở đầu: Post FB & Ảnh Buồm */}
                 <div className="buom-group-intro">
@@ -310,6 +311,8 @@ const ProjectMayBiec: React.FC<{ onBack: () => void }> = ({ onBack }) => {
         <div className="corkboard horizontal-board" ref={scrollRef}>
             <div className="horizontal-content maybiec-layout">
                 <button className="back-btn" onClick={onBack}>Back to Board</button>
+                <ClickMeIndicator text="Scroll right!!" className="pointer-pola-3" />
+
 
                 {/* 1. Mở đầu: Lời tự sự & Cụm ảnh trái */}
                 <div className="mb-block reflection-block">
@@ -465,6 +468,7 @@ const ProjectPISE: React.FC<{ onBack: () => void }> = ({ onBack }) => {
         <div className="corkboard horizontal-board" ref={scrollRef}>
             <div className="horizontal-content pise-layout">
                 <button className="back-btn" onClick={onBack}>Back to Board</button>
+                <ClickMeIndicator text="Scroll right!!" className="pointer-pola-3" />
 
                 <div className="pise-hero-container">
                     <div className="pise-img-left pise-pic">

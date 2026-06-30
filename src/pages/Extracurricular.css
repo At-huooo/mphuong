@@ -40,6 +40,34 @@
 /* =========================================
    MAIN BOARD ELEMENTS
 ========================================= */
+.pointer-pola-1 {
+    position: absolute;
+    bottom: 5%;
+    left: 35%;
+    color: #424242;
+    font-size: 2.2rem;
+    font-family: var(--font-accent), cursive;
+}
+
+.pointer-pola-2 {
+    position: absolute;
+    top: 30%;
+    right: 18%;
+    transform: rotate(12deg);
+    color: #424242;
+    font-size: 2.2rem;
+    font-family: var(--font-accent), cursive;
+}
+
+.pointer-pola-3 {
+    position: absolute;
+    bottom: 30%;
+    left: 30%;
+    transform: rotate(12deg);
+    color: #424242;
+    font-size: 2.2rem;
+    font-family: var(--font-accent), cursive;
+}
 .torn-paper-title {
     width: 650px;
     aspect-ratio: 2 / 1;

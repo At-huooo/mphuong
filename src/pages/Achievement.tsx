@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import './Achievement.css';
 import Navbar from '../assets/Navbar1';
 import Footer from '../assets/Footer';
+import { ClickMeIndicator } from '../assets/Clickme';
 
 const fadeUpVariant = {
     hidden: { opacity: 0, y: 60 },
@@ -85,6 +86,7 @@ const Achievement: React.FC = () => {
                     </div>
 
                     <div className="foundation-cards">
+                        <ClickMeIndicator text="Click on the logo to see more!" className="click-me-achievement" />
                         <div className="mini-card zoomable2" onClick={() => setZoomedImage(`${import.meta.env.BASE_URL}CERTS/Certs5.jpg`)}>
                             <div className="icon-box red-box"></div>
                             <div className="card-info">

@@ -39,6 +39,19 @@
     margin-bottom: 50px;
 }
 
+.click-me-achievement {
+    position: absolute;
+    bottom: 25px;
+    right: 15px;
+    font-family: var(--font-accent);
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #b91c1c;
+    pointer-events: none;
+    z-index: 30;
+    
+    transform: rotate(-6deg);
+}
 /* =========================================
    TYPOGRAPHY
 ========================================= */

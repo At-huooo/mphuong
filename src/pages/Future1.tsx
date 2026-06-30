@@ -3,6 +3,7 @@ import './Future.css';
 import Navbar from '../assets/Navbar1';
 import Footer from '../assets/Footer';
 import { useNavigate } from 'react-router-dom';
+import { ClickMeIndicator } from '../assets/Clickme';
 
 const FuturePlanPage: React.FC = () => {
     const [isVariant2, setIsVariant2] = useState<boolean>(false);
@@ -48,6 +49,7 @@ const FuturePlanPage: React.FC = () => {
                                     youth on a macro scale.
                                 </p>
                             </div>
+                            <ClickMeIndicator text="Click to see more!" className="click-indicator-future" />
                         </div>
                     ) : (
                         /* DẠNG 2 */

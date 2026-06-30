@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.css';
 import Footer from '../assets/Footer';
 import { Link } from 'react-router-dom';
+import { ClickMeIndicator } from '../assets/Clickme';
 
 const HomePage: React.FC = () => {
   return (
@@ -54,6 +55,7 @@ const HomePage: React.FC = () => {
 
             <div className="timeline-path">
             </div>
+            <ClickMeIndicator text="Click the polaroids to explore!" className="click-indicator-timeline" />
 
             {/* Các Item dọc theo dây */}
             <Link to="/about">

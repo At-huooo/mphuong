@@ -22,17 +22,17 @@ const Achievement: React.FC = () => {
 
     const certData = [
         {
-            src: "/CERTS/Certs17.png",
+            src: `${import.meta.env.BASE_URL}CERTS/Certs17.png`,
             caption: "Top 10 Sustainable Reading Culture Initiative",
             desc: "Demonstrates my ability to design sustainable community programs and drive social impact through educational initiatives."
         },
         {
-            src: "/CERTS/Certs19.png",
+            src: `${import.meta.env.BASE_URL}CERTS/Certs19.png`,
             caption: "Head of Content - Buồm Education",
             desc: "Showcasesing my versatility in strategic content creation and academic planning."
         },
         {
-            src: "/CERTS/Certs16.jpg",
+            src: `${import.meta.env.BASE_URL}CERTS/Certs16.jpg`,
             caption: "Academic Board Member - Buồm Education",
             desc: "My experience in driving a organization's core educational values."
         },
@@ -42,22 +42,22 @@ const Achievement: React.FC = () => {
             desc:"Demonstrates my leadership in fostering a culture of reading and literary appreciation."
         },
         {
-            src: "/CERTS/Certs9.jpg",
+            src: `${import.meta.env.BASE_URL}CERTS/Certs9.jpg`,
             caption: "Mây Biếc (Literature & Book Club, Gia Dinh High School)",
             desc: "Grade 10 membership in a literature club that promotes reading culture and literary discussions."
         },
         {
-            src: "/CERTS/Certs10.jpg",
+            src: `${import.meta.env.BASE_URL}CERTS/Certs10.jpg`,
             caption: "Participant — Maybiec for Gia Dinh openday 2024",
             desc: "Showcases my active engagement in promoting the book club within the school community."
         },
         {
-            src: "/CERTS/Certs11.jpg",
+            src: `${import.meta.env.BASE_URL}CERTS/Certs11.jpg`,
             caption: "Participant — Maybiec for Gia Dinh openday 2025",
             desc: "Showcases my active engagement in promoting the book club within the school community."
         },
         {
-            src: "/CERTS/Certs6.jpg",
+            src: `${import.meta.env.BASE_URL}CERTS/Certs6.jpg`,
             caption: "Mentee — PISE 2025",
             desc: ""
         }
@@ -95,7 +95,7 @@ const Achievement: React.FC = () => {
 
                         <div className="mini-card zoomable2" onClick={() => setZoomedImage('/CERTS/Certs21.jpg')}>
                             <div className="icon-box">
-                                <img src="/MICS/IMGGDDT.png" alt="Math Logo" />
+                                <img src={`${import.meta.env.BASE_URL}MICS/IMGGDDT.png`} alt="Math Logo" />
                             </div>
                             <div className="card-info">
                                 <h3>3rd Prize</h3>
@@ -127,7 +127,7 @@ const Achievement: React.FC = () => {
                             viewport={{ once: true, amount: 0.2 }} // Chỉ chạy 1 lần khi cuộn tới 20% thẻ
                         >
                             <div className="card-top">
-                                <img src="/LOGO/LG4.jpg" alt="ISME" className="poster-img" />
+                                <img src={`${import.meta.env.BASE_URL}LOGO/LG4.jpg`} alt="ISME" className="poster-img" />
                                 <div className="card-text">
                                     <h2>2nd Prize, ISME Business Case Debate Contest <span className="red-text">Top 2/76</span></h2>
                                     <blockquote className="quote">
@@ -141,9 +141,9 @@ const Achievement: React.FC = () => {
                                 <li>Highlight: Showcases sharp business acumen and strategic debate skills.</li>
                             </ul>
                             <div className="card-gallery">
-                                <img src="/MICS/IMGSelf6.jpg" alt="Gallery" onClick={() => setZoomedImage('/MICS/IMGSelf6.jpg')} style={{ cursor: 'pointer' }} />
-                                <img src="/MICS/IMGSelf4.jpg" alt="Gallery" onClick={() => setZoomedImage('/MICS/IMGSelf4.jpg')} style={{ cursor: 'pointer' }} />
-                                <img src="/CERTS/Certs12.jpg" alt="Gallery" onClick={() => setZoomedImage('/CERTS/Certs12.jpg')} style={{ cursor: 'pointer' }} />
+                                <img src={`${import.meta.env.BASE_URL}MICS/IMGSelf6.jpg`} alt="Gallery" onClick={() => setZoomedImage('/MICS/IMGSelf6.jpg')} style={{ cursor: 'pointer' }} />
+                                <img src={`${import.meta.env.BASE_URL}MICS/IMGSelf4.jpg`} alt="Gallery" onClick={() => setZoomedImage('/MICS/IMGSelf4.jpg')} style={{ cursor: 'pointer' }} />
+                                <img src={`${import.meta.env.BASE_URL}CERTS/Certs12.jpg`} alt="Gallery" onClick={() => setZoomedImage('/CERTS/Certs12.jpg')} style={{ cursor: 'pointer' }} />
                             </div>
                         </motion.div>
 

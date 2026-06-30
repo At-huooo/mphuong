@@ -258,139 +258,6 @@
 }
 
 /* =========================================
-   RESPONSIVE ADJUSTMENTS
-========================================= */
-
-@media (max-width: 1024px) {
-    .torn-paper-title {
-        width: 505px;
-    }
-
-    .white-note {
-        width: 220px;
-        height: 154px;
-        font-size: 1.2rem;
-        top: 20%;
-        left: 20%;
-    }
-
-    .polaroid {
-        width: 170px;
-    }
-
-    .polaroid-1,
-    .polaroid-2,
-    .polaroid-3 {
-        height: 225px;
-    }
-
-    .polaroid-caption h3 {
-        font-size: 1.2rem;
-    }
-
-    .cat-sticker-2 {
-        width: 180px;
-    }
-
-    .cat-sticker-1 {
-        width: 120px;
-    }
-
-    .stars-sticker-bottom {
-        width: 150px;
-    }
-}
-
-@media (max-width: 768px) {
-    .ec-board-wrapper {
-        height: 95%;
-    }
-
-    .corkboard {
-        overflow-y: auto !important;
-        scrollbar-width: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        padding: 3rem 1rem;
-        gap: 2rem;
-    }
-
-    .torn-paper-title,
-    .white-note,
-    .polaroid {
-        position: relative;
-        top: auto !important;
-        left: auto !important;
-        right: auto !important;
-        bottom: auto !important;
-        margin: 0;
-        flex-shrink: 0;
-    }
-
-    .torn-paper-title {
-        width: 90%;
-        max-width: 350px;
-        min-height: 200px;
-        height: auto;
-        background-size: 100% 100%;
-        transform: rotate(-2deg);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .white-note {
-        width: 280px;
-        height: 200px;
-        font-size: 1.6rem;
-        transform: rotate(3deg);
-        background-size: 100% 100%;
-    }
-
-    .polaroid {
-        width: 280px;
-    }
-
-    .polaroid-1,
-    .polaroid-2,
-    .polaroid-3 {
-        height: 360px !important;
-        transform: rotate(0deg) !important;
-    }
-
-    .polaroid-caption h3 {
-        font-size: 1.6rem;
-    }
-
-    .polaroid-caption p {
-        font-size: 1.3rem;
-    }
-
-    .cat-sticker-2 {
-        display: block;
-        width: 220px;
-        height: 220px;
-        transform: rotate(5deg);
-    }
-
-    .stars-sticker-bottom {
-        display: block;
-        width: 180px;
-        height: 180px;
-        transform: rotate(15deg);
-    }
-
-    .red-string-svg,
-    .cat-sticker-1,
-    .star-sticker-top,
-    .star-decor {
-        display: none;
-    }
-}
-
-/* =========================================
    HORIZONTAL BOARDS (Trang con)
 ========================================= */
 .horizontal-board {
@@ -1269,7 +1136,7 @@
 
 .mb-pol-1 {
     position: absolute;
-    bottom: 30%;
+    bottom: 15%;
     left: 0;
     z-index: 2;
     width: 250px;
@@ -1282,8 +1149,8 @@
 
 .mb-pol-2 {
     position: absolute;
-    top: 8%;
-    left: 55px;
+    top: 5%;
+    left: 35px;
     z-index: 1;
     width: 250px;
     height: 300px;
@@ -1743,7 +1610,7 @@
 
 /* Ảnh 1: Trên Trái */
 .mb-final-tl {
-    top: 12%;
+    top: 5%;
     left: -20px;
     width: 380px;
     aspect-ratio: 27 / 17;
@@ -1775,7 +1642,7 @@
 
 /* Ảnh 2: Dưới Trái */
 .mb-final-bl {
-    bottom: 11%;
+    bottom: 5%;
     left: 0px;
     width: 360px;
     aspect-ratio: 3 / 2;
@@ -1791,7 +1658,7 @@
 
 /* Graphic 3: Trên Phải (Logo Mèo xanh) */
 .mb-final-tr {
-    top: 20%;
+    top: 10%;
     right: 130px;
     width: 160px;
     height: 160px;
@@ -1809,7 +1676,7 @@
 
 /* Ảnh 4: Dưới Phải */
 .mb-final-br {
-    bottom: 11%;
+    bottom: 5%;
     right: 0;
     width: 380px;
     aspect-ratio: 3 / 2;
@@ -1841,7 +1708,7 @@
 
 .final-music-note {
     position: absolute;
-    top: 20%;
+    top: 10%;
     right: 35%;
     width: 160px;
     aspect-ratio: 1 / 1;
@@ -1858,22 +1725,19 @@
 
 .final-star-red-bottom {
     position: absolute;
-    bottom: 120px;
-    left: 430px;
+    top: 50%;
+    left: 0px;
     width: 120px;
     filter: drop-shadow(2px 4px 5px rgba(0, 0, 0, 0.3));
     aspect-ratio: 1 / 1;
     background-image: url('/DECOR/DCPaperPunk48.png');
-    /* Đường dẫn sao đỏ */
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     filter: drop-shadow(2px 4px 5px rgba(0, 0, 0, 0.3));
     z-index: 12;
-    /* Đè lên text một chút */
 }
 
-/* Ẩn các class decor cũ không dùng đến trong End Block */
 .mb-end-1,
 .mb-end-2,
 .mb-end-3 {
@@ -2002,7 +1866,7 @@
 
 /* Vị trí ảnh phải trên */
 .pise-img-rt {
-    top: 14%;
+    top: 10%;
     right: 12%;
     width: 260px;
     aspect-ratio: 4 / 3;
@@ -2929,4 +2793,86 @@
     filter: drop-shadow(1px 2px 2px rgba(0, 0, 0, 0.3));
     /* Đổ bóng nhẹ cho nét vẽ */
     transform: rotate(2deg);
+}
+
+/* =========================================
+   MOBILE RESPONSIVE - MAIN PAGE ONLY (<= 768px)
+========================================= */
+@media (max-width: 768px) {
+    .ec-board-wrapper {
+        min-height: 100vh;
+        overflow: scroll;
+    }
+
+    .corkboard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        padding: 40px 10px;
+        overflow: scroll;
+    }
+
+    /* 2. Tiêu đề và Ghi chú trắng */
+    .torn-paper-title {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 90%;
+        max-width: 450px;
+        min-height: 100px;
+        margin: 0 auto 20px auto;
+        padding: 20px;
+        background-size: contain;
+    }
+
+    .white-note {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 90%;
+        max-width: 300px;
+        height: auto;
+        min-height: 180px;
+        margin: 0 auto 30px auto;
+    }
+
+    /* 3. Khối Polaroids */
+    .polaroid-1, .polaroid-2, .polaroid-3 {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 90%;
+        max-width: 200px;
+    }
+
+    /* Giảm độ nghiêng của ảnh trên mobile để tối ưu diện tích đọc */
+    .polaroid-1 { transform: rotate(-3deg); }
+    .polaroid-2 { transform: rotate(2deg); }
+    .polaroid-3 { transform: rotate(-2deg); }
+
+    .polaroid:hover {
+        transform: scale(1.02) rotate(0deg) !important;
+    }
+
+    /* 4. Xử lý các chi tiết trang trí (Decors & Stickers) */
+    .red-string-svg {
+        display: none; /* Không tương thích với layout dọc */
+    }
+
+    /* Ẩn bớt các sticker quá lớn gây tràn màn hình dọc */
+    .cat-sticker-2,
+    .stars-sticker-bottom,
+    .star-sticker-top {
+        display: none; 
+    }
+
+    /* Điều chỉnh tọa độ các sticker còn lại */
+    .cat-sticker-1, .star-sticker-bottom {
+        display:none
+    }
 }

@@ -97,8 +97,8 @@
 .exclamation {
     bottom: 15rem;
     left: -7rem;
-    width: 12rem;
-    aspect-ratio: 1 / 2;
+    width: 10rem;
+    aspect-ratio: 1.2 / 2;
 
     background-image: url('DECOR/DCPaperPunk36.png');
     background-size: contain;

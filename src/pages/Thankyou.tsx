@@ -10,14 +10,14 @@ const Thankyou: React.FC = () => {
             <div className="content-wrapper">
 
                 {/* Placeholders cho hình ảnh decor */}
-                <div className="decor-ty torn-paper"></div>
-                <div className="decor-ty star-sticker"></div>
-                <div className="decor-ty exclamation"></div>
-                <div className="decor-ty bear-sticker"></div>
-                <div className="decor-ty scribble"></div>
-                <div className="decor-ty envelope"></div>
-                <div className="decor-ty rmit-logo"></div>
-                <div className="decor-ty white-doodle"></div>
+                <img className="decor-ty torn-paper" src="DECOR/DCPaperPunk22.png" alt="Torn Paper"></img>
+                <img className="decor-ty star-sticker" src="DECOR/DCPaperPunk41.png" alt="Star Sticker"></img>
+                <img className="decor-ty exclamation" src="DECOR/DCPaperPunk36.png" alt="Exclamation"></img>
+                <img className="decor-ty bear-sticker" src="DECOR/DCPaperPunk29.png" alt="Bear Sticker"></img>
+                <img className="decor-ty scribble" src="DECOR/DCPaperPunk31.png" alt="Scribble"></img>
+                <img className="decor-ty envelope" src="DECOR/DCPaperPunk9.png" alt="Envelope"></img>
+                <img className="decor-ty rmit-logo" src="LOGO/LG7.png" alt="RMIT Logo"></img>
+                <img className="decor-ty white-doodle" src="DECOR/DCPaperPunk23.png" alt="White Doodle"></img>
                 {/* Nội dung chính */}
                 <div className="paper-content">
                     <h1>ACKNOWLEDGEMENTS: TO THOSE WHO HELD MY "FIRST DRAFT"</h1>

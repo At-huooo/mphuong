@@ -5,15 +5,21 @@ import AnimatedRoutes from './AnimateRoute';
 import './index.css';
 import ScrollToTop from './assets/ScrollToTop';
 
-let routerDom = <BrowserRouter>
-  <ScrollToTop />
-  <AnimatedRoutes />
-</BrowserRouter>;
-if (import.meta.env.BASE_URL)
-  routerDom = <BrowserRouter basename={`${import.meta.env.BASE_URL}`}>
+let routerDom = (
+  <BrowserRouter>
     <ScrollToTop />
     <AnimatedRoutes />
-  </BrowserRouter>;
+  </BrowserRouter>
+);
+
+if (import.meta.env.BASE_URL) {
+  routerDom = (
+    <BrowserRouter basename={`${import.meta.env.BASE_URL}`}>
+      <ScrollToTop />
+      <AnimatedRoutes />
+    </BrowserRouter>
+  );
+}
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

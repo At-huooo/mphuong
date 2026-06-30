@@ -3,9 +3,6 @@ on:
     branches:
       - main
 
-permissions:
-  id-token: write
-  pages: write
 
 jobs:
   build:
@@ -36,7 +33,7 @@ jobs:
       
       - name: Build
         env:
-          GH_PAGES: true
+          BASE_URL: ${{ github.event.repository.name }}
         run: yarn run build
 
       # Pack artifact
@@ -52,6 +49,10 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+      
+    permissions:
+      id-token: write
+      pages: write
 
     steps:
       - name: Deploy to GitHub Pages

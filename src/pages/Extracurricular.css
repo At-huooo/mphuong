@@ -1638,9 +1638,9 @@
 
 /* Ảnh 1: Trên Trái */
 .mb-final-tl {
-    top: 5%;
+    top: 2%;
     left: -20px;
-    width: 380px;
+    height: 30%;
     aspect-ratio: 27 / 17;
     border-radius: 4px;
     border: 6px solid #e2e8f0;
@@ -1670,9 +1670,9 @@
 
 /* Ảnh 2: Dưới Trái */
 .mb-final-bl {
-    bottom: 5%;
+    bottom: 2%;
     left: 0px;
-    width: 360px;
+    height: 30%;
     aspect-ratio: 3 / 2;
     border-radius: 4px;
     border: 6px solid #e2e8f0;
@@ -1686,10 +1686,10 @@
 
 /* Graphic 3: Trên Phải (Logo Mèo xanh) */
 .mb-final-tr {
-    top: 10%;
+    top: 6%;
     right: 130px;
-    width: 160px;
-    height: 160px;
+    height: 20%;
+    aspect-ratio: 1 / 1;
     background-color: #559ba5;
     /* Màu nền xanh cổ vịt */
     border: 4px solid #3c7d87;
@@ -1704,9 +1704,9 @@
 
 /* Ảnh 4: Dưới Phải */
 .mb-final-br {
-    bottom: 5%;
+    bottom: 2%;
     right: 0;
-    width: 380px;
+    height: 30%;
     aspect-ratio: 3 / 2;
     border-radius: 4px;
     border: 6px solid #e2e8f0;
@@ -1736,7 +1736,7 @@
 
 .final-music-note {
     position: absolute;
-    top: 10%;
+    top: 6%;
     right: 35%;
     width: 160px;
     aspect-ratio: 1 / 1;

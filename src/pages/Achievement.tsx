@@ -191,7 +191,7 @@ const Achievement: React.FC = () => {
                                         <h2>ASPIRING VIETNAM 2024<br />Best of <span className="pink-text">Demo Challenge</span>, Future President Program, Top 128</h2>
                                         <blockquote className="quote">
                                             "The room is full of brilliant minds; how could I possibly catch up?"<br /><br />
-                                            "But courage is simply the willingness to make the first argument."
+                                            "I don't have to outsmart them; I just need the courage to learn from them."
                                         </blockquote>
                                     </div>
                                 </div>
